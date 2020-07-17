@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int *p,i,n;
+    int arr[100];
+    p=arr;
+    cout<<"enter size of an array\n";
+    cin>>n;
+    cout<<"enter array elements\n";
+    for(i=0;i<n;i++)
+    {
+    cin>>arr[i];
+    }
+    cout<<"you entered:\n";
+     for(i=0;i<n;i++)
+    {
+     cout<<*p<<endl;
+     p++;
+    }
+    return 0;
+}
