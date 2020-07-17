@@ -1,0 +1,27 @@
+int main()
+{
+    char choice;
+    int a,b;
+    
+    cout<<"pick an option of your choice\n 1.Addition\n 2.Substraction\n 3.Multiplication\n 4.Division\n 5.Quit\n";
+    cin>>choice;
+    cout<<"enter the values of a and b";
+    cin>>a>>b;
+    switch(choice)
+    {
+        case '1' :cout<<"the addition of"<< " "<<a<<" "<<"and"<<" "<<b<<" "<<"is:"<<a+b;
+        break;       
+        case '2' : cout<<"the Substraction of"<< " "<<a<<" "<<"and"<<" "<<b<<" "<<"is:"<<a-b;
+        break; 
+        case '3' :cout<<"the Multiplication of"<< " "<<a<<" "<<"and"<<" "<<b<<" "<<"is:"<<a*b;
+        break;       
+        case '4' :cout<<"the Division of"<< " "<<a<<" "<<"and"<<" "<<b<<" "<<"is:"<<a/b;
+        break;  
+        case '5' :exit(0);
+        break;
+        default: cout<<"Invalid choice";  
+        break;
+    
+    }
+    return 0;
+}
