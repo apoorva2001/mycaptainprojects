@@ -1,0 +1,52 @@
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+class Time
+{
+    private:
+      int totalsec;
+      int hh,mm,ss;
+     
+      public:
+      void entertime(void);
+      int convertToseconds();
+      void displayseconds(void);
+};
+ void Time::entertime(void)
+ {
+     cout<<"enter number of hours :";
+     cin>>hh;
+     cout<<"enter number of minutes :";
+     cin>>mm;
+     cout<<"enter number of seconds :";
+     cin>>ss;
+     cout<<"the entered time is:"<<setw(2)<<setfill('0')<<hh<<":"<<setw(2)<<setfill('0')<<mm<<":"<<setw(2)<<setfill('0')<<ss;
+     
+ }
+ 
+ int Time::convertToseconds(void)
+  {
+     hh=hh*3600;
+     mm=mm*60;
+     totalsec=hh+mm+ss;
+     return totalsec;
+ }
+  void Time::displayseconds(void)
+  {
+      cout<<"\ntotal seconds:"<<totalsec;
+      
+  }
+ int main()
+  {
+      Time T;
+      T.entertime();
+      T.convertToseconds();
+      T.displayseconds();
+      return 0;
+  }
+ 
+ 
+ 
