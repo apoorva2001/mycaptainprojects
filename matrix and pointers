@@ -1,5 +1,7 @@
+ //c program to initialize 3x3 array,insert array elements, read and print array elements using pointers  and also find and print sum of all diagonal elements 
+
 #include<stdio.h>
- main()
+  main()
 {
 	int r,c,i,j,*p[10][10],a[10][10],sum=0;
 	
