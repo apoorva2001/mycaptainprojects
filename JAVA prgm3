@@ -1,0 +1,33 @@
+//Java program to illustrate the working of switch statement
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int choice,a,b,c;
+		System.out.println("Menu for operation\n1.Addition\n2.Substraction\n3.Multiplicaton\n4.Division");
+	    Scanner in=new Scanner(System.in);
+	    System.out.println("Enter your choice");
+	    choice= in.nextInt();
+	    System.out.println("Enter the value of a and b");
+	    a=in.nextInt();
+	    b=in.nextInt();
+        switch(choice)
+        {
+            case 1: c=a+b;
+                   System.out.println("Addition of "+a+" and "+b+" is =  "+c);
+                   break;
+            case 2: c=a-b;
+                   System.out.println("Substraction of "+a+" and "+b+" is = "+c);
+                   break;
+            case 3: c=a*b;
+                   System.out.println("Multiplication of "+a+" and "+b+" is = "+c);
+                   break;
+            case 4: c=a/b;
+                   System.out.println("Division of "+a+" and "+b+" is = "+c);
+                   break;
+            default:System.out.println("Invalid choice");
+            System.exit(0);
+        }
+
+	}
+}
