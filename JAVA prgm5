@@ -1,0 +1,43 @@
+//JAVA program to print information (say name,year of joining and address) of n employee
+import java.util.Scanner;
+class Employee
+{
+    String name,Yj,address;
+    Scanner in=new Scanner(System.in);
+    public void read()
+    {
+       System.out.println("enter name,year of joining and address of Employee");
+       
+       name=in.nextLine();
+       Yj=in.nextLine();
+       address=in.nextLine();
+     }
+     public void display()
+     {
+        System.out.println(name+"\t"+Yj+"\t\t\t"+address);
+     }
+}
+public class Main
+{
+    public static void main(String args[])
+    {   int n;
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the number of employee");
+        n=input.nextInt();
+       Employee[] std=new Employee[n];
+        System.out.println("enter the employee details");
+        for(int i=0;i<n;i++)
+        {
+            std[i]=new Employee();
+            std[i].read();
+        }
+        System.out.println("Employee details");
+        System.out.println("NAME\tYEAR OF JOINING\t\tADDRESS");
+        for(int i=0;i<n;i++)
+        {
+            std[i].display();
+        }
+    }
+}
+
+
